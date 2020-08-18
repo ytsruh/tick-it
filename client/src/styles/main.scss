@@ -1,0 +1,58 @@
+// Your variable overrides can go here, e.g.:
+// $h1-font-size: 3rem;
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: #090909;
+}
+
+.jumbotron {
+  background: url("/jumbotron.jpg");
+  background-color: #090909;
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-login {
+  background-image: url("/bg1.jpeg");
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-register {
+  background-image: url("/bg2.jpg");
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-dashboard {
+  background-image: url("/bg3.jpg");
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.featureIcon {
+  font-size: 75px;
+}
+
+@import "~bootswatch/dist/slate/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/slate/bootswatch";
