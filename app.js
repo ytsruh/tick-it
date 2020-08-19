@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const helmet = require("helmet");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const path = require("path");
 const passport = require("passport");
 const app = express();
 
@@ -27,6 +28,14 @@ passport.use("jwt", strategy.JWT);
 //Import routes
 const api = require("./routes");
 app.use("/api/", api);
+
+// Serve React App
+// Serve static files from the React app
+app.use(express.static("build"));
+// Always return the main index.html, so react-router render the route in the client
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/build/index.html"));
+});
 
 // Handle route not found (404)
 app.use((req, res) => {

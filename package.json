@@ -2,7 +2,8 @@
   "name": "tick-it",
   "version": "0.0.0",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "nodemon": "nodemon app.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",

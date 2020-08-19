@@ -9,14 +9,14 @@ const jwt = require("jsonwebtoken");
 */
 
 // Register new user
-router.post("/register", async (req, res, next) => {
-  try {
-    const data = await User.create(req.body);
-    res.json({ message: "Sucessfully registered", body: data });
-  } catch (err) {
-    next(err);
-  }
-});
+// router.post("/register", async (req, res, next) => {
+//   try {
+//     const data = await User.create(req.body);
+//     res.json({ message: "Sucessfully registered", body: data });
+//   } catch (err) {
+//     next(err);
+//   }
+// });
 
 // Log a user in
 router.post("/login", passport.authenticate("local", { session: false }), async (req, res, next) => {
