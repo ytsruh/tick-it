@@ -1,6 +1,6 @@
 # Tick-it
 
-Welcome to Tick-it. A support ticket system. [Hosted on Microsoft Azure](https://tick-it.azurewebsites.net)
+Welcome to Tick-it. A support ticket system. [Hosted on Microsoft Azure](https://tick-it.azurewebsites.net). (Website will be slow on initial load whilst the app warms up on Azure App Service)
 
 ### Technologies
 
